@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mi pagina web</title>
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/estilos.css" />
+	</head>
+	<body>
+		<!------------------------------ SECCIÓN HERO START -->
+		<header class="hero">
+			<nav class="nav container">
+				<div class="nav__logo">
+					<h2 class="nav__title">Mi logo</h2>
+				</div>
+				<ul class="nav__link nav__link--menu">
+					<li class="nav__items">
+						<a href="#index.html" class="nav__links">Inicio</a>
+					</li>
+					<li class="nav__items">
+						<a href="#about" class="nav__links">Acerca de</a>
+					</li>
+					<li class="nav__items">
+						<a href="#contact" class="nav__links">Contacto</a>
+					</li>
+					<li class="nav__items">
+						<a href="#blog" class="nav__links">Blog</a>
+					</li>
+					<img
+						src="images/close.svg"
+						class="nav__close"
+						alt="icono cerrar menu"
+					/>
+				</ul>
+				<div class="nav__menu">
+					<img src="images/menu.svg" class="menu__img" alt="icono menu" />
+				</div>
+			</nav>
+			<section class="hero__container container">
+				<h1 class="hero__title">Mi titulo principal</h1>
+				<p class="hero__paragraph">
+					Parrafo principa Lorem ipsum, dolor sit amet consectetur adipisicing
+					elit. Soluta recusandae distinctio placeat officiis aspernatur
+					corporis ad veniam quisquam minima quo tempore repellendus adipisci,
+					quod saepe ducimus asperiores vel nulla sunt?
+				</p>
+				<!--botón de llamado a la acción -->
+				<a href="#" class="cta">Botón action </a>
+			</section>
+		</header>
+		<!------------------------------ SECCIÓN HERO END -->
+		<main>
+			<!-- Define el elemento principal de la página web. -->
+			<section class="container about">
+				<!-- "container" define un ancho máximo para el contenedor y ajusta el margen para centrarlo en la página. -->
+				<h2 class="subtitle">Soy un subtitulo</h2>
+				<p class="about__paragraph">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+					reprehenderit est nemo officia blanditiis eos voluptatem temporibus
+					explicabo totam sunt iure nihil iusto soluta, minima laborum, vel quod
+					modi consectetur!
+				</p>
+
+				<div class="about__main">
+					<!--  Define un contenedor adicional con la clase "about__main" que contiene tres artículos -->
+					<article class="about__icons">
+						<img src="images/shapes.svg" class="about__icon" alt="icono" />
+						<h3 class="about__title">Subtitulo Párrafo 1</h3>
+						<p class="about__paragraph">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Assumenda placeat similique eveniet quae veritatis facere amet
+							natus iure, saepe.
+						</p>
+					</article>
+					<article class="about__icons">
+						<!-- que contiene un ícono de imagen (<img>) y dos encabezados (<h3> y <p>)  -->
+						<img src="images/paint.svg" class="about__icon" alt="icono" />
+						<h3 class="about__title">Subtitulo Párrafo 2</h3>
+						<p class="about__paragraph">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Assumenda placeat similique eveniet quae veritatis facere amet
+							natus iure, saepe.
+						</p>
+					</article>
+					<article class="about__icons">
+						<img src="images/code.svg" class="about__icon" alt="icono" />
+						<h3 class="about__title">Subtitulo Párrafo 3</h3>
+						<p class="about__paragraph">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Assumenda placeat similique eveniet quae veritatis facere amet
+							natus iure, saepe.
+						</p>
+					</article>
+				</div>
+			</section>
+			<section class="knowledge">
+				<div class="knowledge__container container">
+					<div class="knowledge__text">
+						<h2 class="subtitle">Otro subtitulo</h2>
+						<p class="knowledge__paragraph">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Temporibus repellat iure mollitia quod in, libero aliquam,
+							molestiae laudantium quo dolorem doloremque debitis eius maxime
+							quos optio corrupti architecto, commodi suscipit.
+						</p>
+						<a href="#" class="cta">Botón action</a>
+					</div>
+
+					<figure class="knowledge__picture">
+						<img src="images/macbook.png" class="knowledge__img" alt="laptop" />
+					</figure>
+				</div>
+			</section>
+			<!-- SECCIÓN PRECIO START -->
+			<section class="price container">
+				<h2 class="subtitle">Titulo de sección precios</h2>
+
+				<div class="price__table">
+					<div class="price__element">
+						<p class="price__name">Plan número 1</p>
+						<h3 class="price__price">Free</h3>
+
+						<div class="price__items">
+							<p class="price__features">caracteristica 1</p>
+							<p class="price__features">caracteristica 2</p>
+							<p class="price__features">caracteristica 3</p>
+						</div>
+
+            <a href="#" class="price__cta">Botón cta</a>
+					</div>
+
+          <div class="price__element price__element--best">
+						<p class="price__name">Plan número 2</p>
+						<h3 class="price__price">$50/mes</h3>
+
+						<div class="price__items">
+							<p class="price__features">caracteristica 1</p>
+							<p class="price__features">caracteristica 2</p>
+							<p class="price__features">caracteristica 3</p>
+						</div>
+
+            <a href="#" class="price__cta">Botón cta</a>
+					</div>
+
+          <div class="price__element">
+						<p class="price__name">Plan número 3</p>
+						<h3 class="price__price">$100/mes</h3>
+
+						<div class="price__items">
+							<p class="price__features">caracteristica 1</p>
+							<p class="price__features">caracteristica 2</p>
+							<p class="price__features">caracteristica 3</p>
+						</div>
+
+            <a href="#" class="price__cta">Botón cta</a>
+					</div>
+
+
+				</div>
+
+				<!-- <div class="price__table">
+					< class="price__element">
+						<p class="plan__name">Plan número 1</p>
+						<h3 class="plan__price">Free</h3>
+						<div class="plan__items">
+						<p class="plan__features">caracteristica 1</p>
+						<p class="plan__features">caracteristica 2</p>
+						<p class="plan__features">caracteristica 3</p>
+            </div>
+				
+					<a href="#" class="plan__cta">Botón cta</a>
+        </div>
+
+
+          <div class="price__element price__element--best">
+						<p class="plan__name">Plan número 2</p>
+						<h3 class="plan__price">$50/mes</h3>
+						<div class="plan__items">
+						<p class="plan__features">caracteristica 1</p>
+						<p class="plan__features">caracteristica 2</p>
+						<p class="plan__features">caracteristica 3</p>
+					</div>
+
+					<a href="#" class="plan__cta">Botón cta</a>
+				</div>
+
+        
+        <div class="price__element">
+						<p class="plan__name">Plan número 3</p>
+						<h3 class="plan__price">$100/mes</h3>
+						<div class="plan__items">
+						<p class="plan__features">caracteristica 1</p>
+						<p class="plan__features">caracteristica 2 </p>
+						<p class="plan__features">caracteristica 3</p>
+					</div>
+					<a href="#" class="plan__cta">Botón cta</a>
+				</div>
+
+        </div> -->
+			</section>
+		</main>
+	</body>
+</html>
