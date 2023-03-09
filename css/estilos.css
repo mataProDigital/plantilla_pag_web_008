@@ -168,7 +168,8 @@ body {
 
 /* SECCIÓN CONOCIMIENTOS */
 
-.knowledge { /* Este codigo lo copie de https://www.magicpattern.design/tools/css-backgrounds solo quite opacida y agregue overflow */
+.knowledge {
+	/* Este codigo lo copie de https://www.magicpattern.design/tools/css-backgrounds solo quite opacida y agregue overflow */
 	background-color: #bacdc9; /* Establece el color de fondo de la sección en #bacdc9 */
 	background-image: radial-gradient(#45bcf7 0.5px, transparent 0.5px),
 		radial-gradient(#45bcf7 0.5px, #bacdc9 0.5px); /* Establece otro gradiente radial con un color #45bcf7 y #bacdc9
@@ -177,7 +178,8 @@ background-size: 20px 20px; // Establece el tamaño de los gradientes radiales *
 	background-position: 0 0, 10px 10px; /* Establece la posición de los gradientes radiales */
 	overflow: hidden; /* Establece que el contenido excedente se oculte */
 }
-.knowledge__container { /* Define contenedor dentro de la sección de conocimiento */
+.knowledge__container {
+	/* Define contenedor dentro de la sección de conocimiento */
 	display: grid;
 	grid-template-columns: 1fr 1fr; /* Establece dos columnas con el mismo ancho dentro de la cuadrícula */
 	gap: 1rem;
@@ -189,7 +191,7 @@ background-size: 20px 20px; // Establece el tamaño de los gradientes radiales *
 
 .knowledge__paragraph {
 	line-height: 1.7; /* Establece la altura de línea del párrafo en 1.7 */
-  margin-bottom: .9375rem; /* para separar el boton del parrafo */
+	margin-bottom: 0.9375rem; /* para separar el boton del parrafo */
 }
 
 .knowledge__img {
@@ -198,85 +200,148 @@ background-size: 20px 20px; // Establece el tamaño de los gradientes radiales *
 }
 /* sección price */
 
-.price{
-  text-align: center; /* Esto alinea el texto dentro de la clase "price" al centro. */
-  
+.price {
+	text-align: center; /* Esto alinea el texto dentro de la clase "price" al centro. */
 }
-.price__table{
-  padding-top: 3.75rem; /* Agrega un espacio en la parte superior de la tabla */
-  display: flex; /* Convierte el elemento en un contenedor flexible */
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-  gap: 2.5rem; /* Define el espacio entre los elementos */
-  justify-content: space-evenly; /* Distribuye los elementos de manera uniforme en el contenedor */
-  align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
-}
-
-
-.price__element{
-  background-color: #e5e5f7; /* Establece el color de fondo del elemento */
-  text-align: center; /* Centra el texto dentro del elemento */
-  border-radius: 10px; /* Agrega bordes redondeados al elemento */
-  -webkit-border-radius: 10px; /* Agrega bordes redondeados para navegadores webkit */
-  -moz-border-radius: 10px; /* Agrega bordes redondeados para navegadores mozilla */
-  -ms-border-radius: 10px; /* Agrega bordes redondeados para navegadores de Microsoft */
-  -o-border-radius: 10px; /* Agrega bordes redondeados para navegadores Opera */
-  width: 330px; /* Define el ancho del elemento */
-  padding: 40px; /* Agrega relleno (padding) alrededor del contenido del elemento */
-  --color-plan:#696871; /* Define una variable CSS personalizada */
-  --color-price:#1d293f; /* Define una variable CSS personalizada */
-  --bg-cta:#fff; /* Define una variable CSS personalizada */
-  --color-cta:#5454d4; /* Define una variable CSS personalizada */
-  --color-items:#696871; /* Define una variable CSS personalizada */
+.price__table {
+	padding-top: 3.75rem; /* Agrega un espacio en la parte superior de la tabla */
+	display: flex; /* Convierte el elemento en un contenedor flexible */
+	flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+	gap: 2.5rem; /* Define el espacio entre los elementos */
+	justify-content: space-evenly; /* Distribuye los elementos de manera uniforme en el contenedor */
+	align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
 }
 
-
-.price__element--best{
-  width: 370px; /* Define el ancho del elemento */
-  padding: 60px 40px; /* Agrega relleno (padding) específico alrededor del contenido del elemento */
-  background-color: #43aaff; /* Establece el color de fondo del elemento */
-  --color-plan:rgb(255 255 255 / 75%); /* Define una variable CSS personalizada para el color del plan */
-  --color-price:#fff; /* Define una variable CSS personalizada para el color del precio */
-  --bg-cta:#19589f; /* Define una variable CSS personalizada para el color de fondo del botón */
-  --color-cta:#ffffff; /* Define una variable CSS personalizada para el color del texto del botón */
-  --color-items:#ffffff; /* Define una variable CSS personalizada para el color del texto de los elementos */
+.price__element {
+	background-color: #e5e5f7; /* Establece el color de fondo del elemento */
+	text-align: center; /* Centra el texto dentro del elemento */
+	border-radius: 10px; /* Agrega bordes redondeados al elemento */
+	-webkit-border-radius: 10px; /* Agrega bordes redondeados para navegadores webkit */
+	-moz-border-radius: 10px; /* Agrega bordes redondeados para navegadores mozilla */
+	-ms-border-radius: 10px; /* Agrega bordes redondeados para navegadores de Microsoft */
+	-o-border-radius: 10px; /* Agrega bordes redondeados para navegadores Opera */
+	width: 330px; /* Define el ancho del elemento */
+	padding: 40px; /* Agrega relleno (padding) alrededor del contenido del elemento */
+	--color-plan: #696871; /* Define una variable CSS personalizada */
+	--color-price: #1d293f; /* Define una variable CSS personalizada */
+	--bg-cta: #fff; /* Define una variable CSS personalizada */
+	--color-cta: #5454d4; /* Define una variable CSS personalizada */
+	--color-items: #696871; /* Define una variable CSS personalizada */
 }
 
-
-.price__name{
-  color: var(--color-plan); /* Establece el color del texto utilizando una variable CSS personalizada */
-  margin-bottom: 15px; /* Agrega un margen inferior al elemento */
-  font-weight: 300; /* Establece el peso de la fuente del elemento */
+.price__element--best {
+	width: 370px; /* Define el ancho del elemento */
+	padding: 60px 40px; /* Agrega relleno (padding) específico alrededor del contenido del elemento */
+	background-color: #43aaff; /* Establece el color de fondo del elemento */
+	--color-plan: rgb(
+		255 255 255 / 75%
+	); /* Define una variable CSS personalizada para el color del plan */
+	--color-price: #fff; /* Define una variable CSS personalizada para el color del precio */
+	--bg-cta: #19589f; /* Define una variable CSS personalizada para el color de fondo del botón */
+	--color-cta: #ffffff; /* Define una variable CSS personalizada para el color del texto del botón */
+	--color-items: #ffffff; /* Define una variable CSS personalizada para el color del texto de los elementos */
 }
 
-.price__price{
-  font-size: 2.5rem; /* Establece el tamaño de fuente del elemento */
-  color: var(--color-price); /* Establece el color del texto utilizando una variable CSS personalizada */
+.price__name {
+	color: var(
+		--color-plan
+	); /* Establece el color del texto utilizando una variable CSS personalizada */
+	margin-bottom: 15px; /* Agrega un margen inferior al elemento */
+	font-weight: 300; /* Establece el peso de la fuente del elemento */
 }
 
-
-.price__items{
-  margin-top: 35px; /* Agrega un margen superior al elemento */
-  display: grid; /* Establece el elemento como una cuadrícula (grid) */
-  gap: 1rem; /* Define la separación entre las celdas de la cuadrícula */
-  font-weight: 300; /* Establece el peso de la fuente del elemento */
-  font-size: 1.2rem; /* Establece el tamaño de fuente del elemento */
-  margin-bottom: 50px; /* Agrega un margen inferior al elemento */
-  color: var(--color-items); /* Establece el color del texto utilizando una variable CSS personalizada */
+.price__price {
+	font-size: 2.5rem; /* Establece el tamaño de fuente del elemento */
+	color: var(
+		--color-price
+	); /* Establece el color del texto utilizando una variable CSS personalizada */
 }
 
-.price__cta{
-  display: block; /* Establece el elemento como un bloque (block) */
-  padding: 20px 0; /* Agrega relleno (padding) específico alrededor del contenido del elemento */
-  border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento */
-  -webkit-border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento para navegadores webkit */
-  -moz-border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento para navegadores mozilla */
-  -ms-border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento para navegadores microsoft */
-  -o-border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento para navegadores opera */
-  text-decoration: none; /* Elimina la decoración de texto del elemento */
-  background-color: var(--bg-cta); /* Establece el color de fondo del elemento utilizando una variable CSS personalizada */
-  font-weight: 600; /* Establece el peso de la fuente del elemento */
-  color: var(--color-cta); /* Establece el color del texto utilizando una variable CSS personalizada */
-  box-shadow: 0 0 1px rgba(0, 0, 0, .5); /* Agrega una sombra al elemento */
+.price__items {
+	margin-top: 35px; /* Agrega un margen superior al elemento */
+	display: grid; /* Establece el elemento como una cuadrícula (grid) */
+	gap: 1rem; /* Define la separación entre las celdas de la cuadrícula */
+	font-weight: 300; /* Establece el peso de la fuente del elemento */
+	font-size: 1.2rem; /* Establece el tamaño de fuente del elemento */
+	margin-bottom: 50px; /* Agrega un margen inferior al elemento */
+	color: var(
+		--color-items
+	); /* Establece el color del texto utilizando una variable CSS personalizada */
+}
+
+.price__cta {
+	display: block; /* Establece el elemento como un bloque (block) */
+	padding: 20px 0; /* Agrega relleno (padding) específico alrededor del contenido del elemento */
+	border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento */
+	-webkit-border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento para navegadores webkit */
+	-moz-border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento para navegadores mozilla */
+	-ms-border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento para navegadores microsoft */
+	-o-border-radius: 10px; /* Establece el radio de la esquina de los bordes del elemento para navegadores opera */
+	text-decoration: none; /* Elimina la decoración de texto del elemento */
+	background-color: var(
+		--bg-cta
+	); /* Establece el color de fondo del elemento utilizando una variable CSS personalizada */
+	font-weight: 600; /* Establece el peso de la fuente del elemento */
+	color: var(
+		--color-cta
+	); /* Establece el color del texto utilizando una variable CSS personalizada */
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); /* Agrega una sombra al elemento */
 }
 
 /* sección price  end*/
+
+/* sección testimonio  start*/
+.testimony {
+	background-color: #e5e5f7;
+}
+
+.testimony__container {
+	display: grid;
+	grid-template-columns: 50px 1fr 50px;
+	gap: 1em;
+	align-items: center;
+}
+
+.testimony__body {
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2em;
+	grid-column: 2/3;
+	grid-row: 1/2;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.testimony__body--show {
+	pointer-events: unset;
+	opacity: 1;
+	transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: 50% 30%;
+}
+
+.testimony__texts {
+	max-width: 700px;
+}
+
+.testimony__course {
+	background-color: #43aaff;
+	color: #fff;
+	display: inline-block;
+	padding: 1px;
+}
+
+.testimony__arrow {
+	width: 90%;
+	cursor: pointer;
+}
+
+/* sección testimonio  end*/
